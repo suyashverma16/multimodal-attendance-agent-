@@ -1,0 +1,10 @@
+# Phase 1 dependencies. Later phases will append opencv-python, mediapipe,
+# librosa, sounddevice, etc. as they are actually needed.
+streamlit==1.39.0
+pandas==2.2.3
+numpy==1.26.4
+# pyarrow is used by Streamlit for tables; versions >= 18 can require NumPy 2,
+# so it is pinned to a release that works with NumPy 1.26.x.
+pyarrow==17.0.0
+plotly==5.24.1
+pytest==8.3.3
